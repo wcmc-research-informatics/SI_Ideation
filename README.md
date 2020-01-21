@@ -1,7 +1,7 @@
 # SI_Ideation
 This repository maintains the code for detection of suicidal ideation (SI) in clinical notes. 
 
-**Setting up the virtual environment: **
+**Setting up the virtual environment:**
 
 1. Clone/download repository to your local machine 
 2. cd (change directory) to location of cloned repository (ex. ```cd Users/.../SI_IDEATION_REPO``` )
