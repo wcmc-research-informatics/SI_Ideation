@@ -1,4 +1,4 @@
-# SI_Ideation
+# Suicidal (SI) Ideation Detection
 This repository maintains the code for detection of suicidal ideation (SI) in clinical notes. 
 
 **Setting up the virtual environment:**
