@@ -22,7 +22,11 @@ This repository maintains the code for detection of suicidal ideation (SI) in cl
   
   Example Command: ```python rb_script.py -d "datapath.xlsx" -nc "note_text" -s "save_path.xlsx" -a 1 -tc "SI Label"```
 
-
+**Important Information:**
+- Additional suicidal ideation keywords can be added to the SI_phrases.txt file in the SI_Files folder
+- Suicidal ideation asssessments to be ignored can be added to the SI_assessments.txt file in the SI_Files folder
+- Additional negation triggers for natural sentence forms can be added to the natural_rules.txt file in the NegexRules folder 
+- Additional negation triggers for structured sentence forms can be added to the structured_rules.txt file in the NegexRules folder
 
 
 **Citations:**
