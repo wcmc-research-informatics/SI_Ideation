@@ -40,8 +40,7 @@ class negTagger(object):
         for phrase in self.__phrases:
             
             phrase = re.sub(r'([.^$*+?{\\|()[\]])', r'\\\1', phrase)
-            #print (phrase)
-            #splitPhrase = phrase.split()
+           
             splitPhrase = [phrase]
             joiner = r'\W+'
             joinedPattern = r'\b' + joiner.join(splitPhrase) +  r'\b'
@@ -54,30 +53,12 @@ class negTagger(object):
                                                           + '[PHRASE]')
         
         for rule in self.__rules:
-            #print (rule)
-            #reformatRule = rule[0].strip()
+           
             reformatRule = re.sub(r'\s+', filler, rule[0].strip())
-            #print (reformatRule)
+            
             self.__sentence = rule[3].sub (' ' + rule[2].strip()
                                                           + reformatRule
                                                           + rule[2].strip() + ' ', self.__sentence)
-                #print (self.__sentence)
-#        for phrase in self.__phrases:
-#
-#            phrase = re.sub(r'([.^$*+?{\\|()[\]])', r'\\\1', phrase)
-#            #print (phrase)
-#            #splitPhrase = phrase.split()
-#            splitPhrase = [phrase]
-#            joiner = r'\W+'
-#            joinedPattern = r'\b' + joiner.join(splitPhrase) +  r'\b'
-#            print (joinedPattern)
-#            reP = re.compile(joinedPattern, re.IGNORECASE)
-#            m = reP.search(self.__sentence)
-#
-#            if m:
-#                self.__sentence = self.__sentence.replace(m.group(0), '[PHRASE]'
-#                                                          + re.sub(r'\s+', filler, m.group(0).strip())
-#                                                          + '[PHRASE]')
 
 #        Exchanges the [PHRASE] ... [PHRASE] tags for [NEGATED] ... [NEGATED] 
 #        based on PREN, POST rules and if negPoss is set to True then based on 
@@ -103,16 +84,7 @@ class negTagger(object):
                 prenFlag = 1
                 overlapFlag = 0
 
-#            if sentenceTokens[i][:6] in ['[CONJ]', '[PSEU]', '[POST]', '[PREP]', '[POSP]']:
-#                overlapFlag = 1
-
-#            if i+1 < len(sentenceTokens):
-#                if sentenceTokens[i+1][:6] == '[PREN]':
-#                    overlapFlag = 1
-#                    if sentencePortion.strip():
-#                        aScopes.append(sentencePortion.strip())
-#                    sentencePortion = ''
-#            print (overlapFlag)
+#
             if prenFlag == 1 and overlapFlag == 0:
                 sentenceTokens[i] = sentenceTokens[i].replace('[PHRASE]', '[NEGATED]')
                 sentencePortion = sentencePortion + ' ' + sentenceTokens[i]
@@ -131,16 +103,7 @@ class negTagger(object):
             if sentenceTokens[i][:6] == '[POST]':
                 postFlag = 1
                 overlapFlag = 0
-
-#            if sentenceTokens[i][:6] in ['[CONJ]', '[PSEU]', '[PREN]', '[PREP]', '[POSP]']:
-#                overlapFlag = 1
-            
-#            if i+1 < len(sentenceTokens):
-#                if sentenceTokens[i+1][:6] == '[POST]':
-##                    overlapFlag = 1
-#                    if sentencePortion.strip():
-#                        aScopes.append(sentencePortion.strip())
-#                    sentencePortion = ''
+           
             
             if postFlag == 1 and overlapFlag == 0:
                 sentenceTokens[i] = sentenceTokens[i].replace('[PHRASE]', '[NEGATED]')

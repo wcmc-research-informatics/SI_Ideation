@@ -4,4 +4,6 @@ numpy==1.17.2
 pandas==0.24.1
 scikit-learn==0.21.3
 sklearn==0.0
+xlrd==1.2.0
+openpyxl==2.4.7
 
