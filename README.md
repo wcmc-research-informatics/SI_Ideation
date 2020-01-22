@@ -12,7 +12,14 @@ This repository maintains the code for detection of suicidal ideation (SI) in cl
 
 **Running the script:** 
 1. Enter the virtual environment with the following command: ```source SI_env/bin/activate```
-2. 
+2. Run the command: ```python rb_script.py``` with the following arguments:
+  - Nath of excel file to read in: ```-d "datapath.xlsx" ```
+  - Name of note text column: ```-nc "note_text"```
+  - Name of excel file to save to: ```-s "savepath.xlsx" ```
+  - Optional: print accuracy and classification report (yes): ```-a 1 ```
+  - Optional: truth column: ```-tc "SI Label"```
+  
+  Example Command: ```python rb_script.py -d "datapath.xlsx" -nc "note_text" -s "save_path.xlsx" -a 1 -tc "SI Label"```
 
 
 
