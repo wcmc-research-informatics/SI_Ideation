@@ -138,14 +138,6 @@ def create_predictions(data_frame):
     
     return data_frame
 
-def format_data(data_frame):
-    #Function Definition: This function ensures that the data is inputted into our rule-based approach in the format that is expected.
-    #We will need additional information on what the expected format is from the KCL team
-    
-    #create a pandas dataframe with the format required to input into our RB approach model
-
-    return data_frame
-
 
 ## MAIN - starting the script
 
