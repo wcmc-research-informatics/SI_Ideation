@@ -167,11 +167,11 @@ truth_c = args.truth_column
 #Declare suicide assessments to exclude
 tknzr = TweetTokenizer()
 
-with open('SI_phrases.txt') as f:
+with open('SI_Files/SI_phrases.txt') as f:
     content = f.readlines()
 SI_phrases = [x.strip() for x in content]
 
-with open('SI_assessments.txt') as f:
+with open('SI_Files/SI_assessments.txt') as f:
     content = f.readlines()
 suicide_assessments = [x.strip() for x in content]
 
