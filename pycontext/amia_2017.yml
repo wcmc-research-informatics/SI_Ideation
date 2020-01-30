@@ -15,3 +15,255 @@ Direction: bidirectional
 Lex: not
 Regex: ''
 Type: DEFINITE_NEGATED_EXISTENCE
+---
+Comments: ''
+Direction: bidirectional
+Lex: nil
+Regex: ''
+Type: DEFINITE_NEGATED_EXISTENCE
+---
+Comments: ''
+Direction: bidirectional
+Lex: n't
+Regex: ''
+Type: DEFINITE_NEGATED_EXISTENCE
+---
+Comments: ''
+Direction: bidirectional
+Lex: never
+Regex: ''
+Type: DEFINITE_NEGATED_EXISTENCE
+---
+Comments: ''
+Direction: bidirectional
+Lex: none
+Regex: ''
+Type: DEFINITE_NEGATED_EXISTENCE
+---
+Comments: ''
+Direction: bidirectional
+Lex: neith
+Regex: ''
+Type: DEFINITE_NEGATED_EXISTENCE
+---
+Comments: ''
+Direction: bidirectional
+Lex: nor
+Regex: ''
+Type: DEFINITE_NEGATED_EXISTENCE
+---
+Comments: ''
+Direction: forward
+Lex: denied
+Regex: ''
+Type: DEFINITE_NEGATED_EXISTENCE
+---
+Comments: ''
+Direction: forward
+Lex: denies
+Regex: ''
+Type: DEFINITE_NEGATED_EXISTENCE
+---
+Comments: ''
+Direction: forward
+Lex: deny
+Regex: ''
+Type: DEFINITE_NEGATED_EXISTENCE
+---
+Comments: ''
+Direction: forward
+Lex: denying
+Regex: ''
+Type: DEFINITE_NEGATED_EXISTENCE
+---
+Comments: ''
+Direction: forward
+Lex: retract
+Regex: retract*
+Type: DEFINITE_NEGATED_EXISTENCE
+---
+Comments: ''
+Direction: forward
+Lex: subside
+Regex:subside*
+Type: DEFINITE_NEGATED_EXISTENCE
+---
+Comments: ''
+Direction: forward
+Lex: retract
+Regex: retract*
+Type: DEFINITE_NEGATED_EXISTENCE
+---
+Comments: ''
+Direction: forward
+Lex: non
+Regex: ''
+Type: DEFINITE_NEGATED_EXISTENCE
+---
+Comments: ''
+Direction: terminate
+Lex: after
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
+Lex: although
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
+Lex: as
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
+Lex: because
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
+Lex: before
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
+Lex: even if
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
+Lex: even though
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
+Lex: if
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
+Lex: in order that
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
+Lex: once
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
+Lex: provided that
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
+Lex: rather than
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
+Lex: since
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
+Lex: so that
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
+Lex: than
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
+Lex: that
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
+Lex: though
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
+Lex: unless
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
+Lex: until
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
+Lex: when
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
+Lex: whenever
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
+Lex: where
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
+Lex: where
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
+Lex: whereas
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
+Lex: wherever
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
+Lex: whether
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
+Lex: while
+Regex: ''
+Type: CONJ
+---
+Comments: ''
+Direction: terminate
+Lex: why
+Regex: ''
+Type: CONJ
