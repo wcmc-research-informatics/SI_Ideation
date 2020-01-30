@@ -1,0 +1,23 @@
+Comments: ''
+Direction: ''
+Lex: suicide
+Regex: suicid*
+Type: SUICIDE
+---
+Comments: ''
+Direction: ''
+Lex: kill herself
+Regex: \bkill(ing|ed|s)* .*?(him|her|them|my)self
+Type: SUICIDE
+---
+Comments: ''
+Direction: ''
+Lex: kill herself
+Regex: bkill(ing|ed|s)* .*? self
+Type: SUICIDE
+---
+Comments: ''
+Direction: ''
+Lex: kill themselves
+Regex: \bkill(ing|ed|s)* .*? themselves
+Type: SUICIDE
