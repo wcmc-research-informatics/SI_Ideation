@@ -1,0 +1,17 @@
+Comments: ''
+Direction: bidirectional
+Lex: no
+Regex: ''
+Type: DEFINITE_NEGATED_EXISTENCE
+---
+Comments: ''
+Direction: bidirectional
+Lex: without
+Regex: ''
+Type: DEFINITE_NEGATED_EXISTENCE
+---
+Comments: ''
+Direction: bidirectional
+Lex: not
+Regex: ''
+Type: DEFINITE_NEGATED_EXISTENCE
