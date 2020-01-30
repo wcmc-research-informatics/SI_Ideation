@@ -81,9 +81,3 @@ Direction: forward
 Lex: retract
 Regex: retract*
 Type: DEFINITE_NEGATED_EXISTENCE
----
-Comments: ''
-Direction: forward
-Lex: subside
-Regex: subside*
-Type: DEFINITE_NEGATED_EXISTENCE
