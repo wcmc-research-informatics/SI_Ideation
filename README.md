@@ -31,7 +31,7 @@ This repository maintains the code for detection of suicidal ideation (SI) in cl
 1. Enter the virtual environment with the following command: ```source SI_env/bin/activate```
 2. Install a couple of new libraries in the virtual environment with the following command: ```pip install -r rq.txt```
 3. Install the spacy "english" library with the following command: ```pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.0/en_core_web_sm-2.2.0.tar.gz```
-4. The updated version of python requires one change to the PyConTextNLP package. Within the ConTextMarkup.py file, we need to comment out line 489. Without this comment, you will get the following error: AttributeError: 'dict_keyiterator' object has no attribute 'sort'
+4. The updated version of python requires one change to the PyConTextNLP package. Within the ConTextMarkup.py file, we need to comment out line 489. You should be able to find this file within SI_Env/python3.7/pyConTextNLP/... Without this comment, you will get the following error: AttributeError: 'dict_keyiterator' object has no attribute 'sort'
 5. Run the command : ```python pycontext_script.py``` with the following arguments:
   - Name of excel file to read in: ```-d "datapath.xlsx" ```
   - Name of note text column: ```-nc "note_text"```
