@@ -12,14 +12,6 @@ from nltk.tokenize import TweetTokenizer
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import classification_report
 
-# Import the negex trigger rules
-#rfile - natural language negation rules
-#ifile2 - structured negation rules
-rfile = open(r'NegexRules/natural_rules.txt')
-irules = sortRules(rfile.readlines())
-ifile2 = open(r'NegexRules/structured_rules.txt')
-irules2 = sortRules(ifile2.readlines())
-
 
 def return_RB_approach(data_frame, note_c, SI_phrases, suicide_assessments):
     
@@ -146,14 +138,18 @@ parser = ArgumentParser()
 parser.add_argument("-d", dest = "data_path", required = True, help = "data path to read in")
 parser.add_argument("-nc", dest = "note_text_column", required = True, help = "name of note text column")
 parser.add_argument("-s", dest = "save_path", required = True, help = "data path to save to")
+parser.add_argument("-c", dest = "current_flag", required = True, help = "use current suicidal ideation")
 parser.add_argument("-a", dest = "accuracy_flag", required = False, help = "print accuracy")
 parser.add_argument("-tc", dest = "truth_column", required = False, help = "name of true column")
+
 args = parser.parse_args()
 data_p = args.data_path
 note_c = args.note_text_column
 save_p = args.save_path
 accuracy_f = int(args.accuracy_flag)
 truth_c = args.truth_column
+current = int(args.current_flag)
+
 
 #Declare suicidal ideation phrases
 #Declare suicide assessments to exclude
@@ -166,6 +162,20 @@ SI_phrases = [x.strip() for x in content]
 with open('SI_Files/SI_assessments.txt') as f:
     content = f.readlines()
 suicide_assessments = [x.strip() for x in content]
+
+
+# Import the negex trigger rules
+#rfile - natural language negation rules
+#ifile2 - structured negation rules
+if current == 1:
+    rfile = open(r'NegexRules/natural_rules.txt')
+    ifile2 = open(r'NegexRules/structured_rules.txt')
+else:
+    rfile = open(r'NegexRules/natural_rules_a.txt')
+    ifile2 = open(r'NegexRules/structured_rules_a.txt')
+
+irules = sortRules(rfile.readlines())
+irules2 = sortRules(ifile2.readlines())
 
 #Read in the data
 df = pd.read_excel(data_p)
