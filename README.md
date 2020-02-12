@@ -16,7 +16,7 @@ This repository maintains the code for detection of suicidal ideation (SI) in cl
   - Name of excel file to read in: ```-d "datapath.xlsx" ```
   - Name of note text column: ```-nc "note_text"```
   - Name of excel file to save to: ```-s "savepath.xlsx" ```
-  - Use the current suicidal ideation NegEx triggers (yes): ```-c 1 ```
+  - Use the current suicidal ideation NegEx triggers (yes/no): ```-c 1 ``` or ```-c 0 ```
   - Optional: print accuracy and classification report (yes): ```-a 1 ```
   - Optional: truth column: ```-tc "SI Label"```
   
@@ -37,7 +37,7 @@ This repository maintains the code for detection of suicidal ideation (SI) in cl
   - Name of excel file to read in: ```-d "datapath.xlsx" ```
   - Name of note text column: ```-nc "note_text"```
   - Name of excel file to save to: ```-s "savepath.xlsx" ```
-  - Use the majority rule for classification (yes): ```-m 1 ```
+  - Use the majority rule for classification (yes/no): ```-m 1 ``` or ```-m 0 ```
   - Optional: print accuracy and classification report (yes): ```-a 1 ```
   - Optional: truth column: ```-tc "SI Label"```
 
