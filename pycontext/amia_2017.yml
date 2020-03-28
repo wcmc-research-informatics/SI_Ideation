@@ -1,6 +1,6 @@
 Comments: ''
 Direction: bidirectional
-Lex: no
+Lex: "no"
 Regex: ''
 Type: DEFINITE_NEGATED_EXISTENCE
 ---
