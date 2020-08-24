@@ -1,0 +1,16 @@
+plan
+knife
+knives
+pills
+handgun
+gun
+rifle
+jump
+drown
+hang
+shoot
+cars
+train
+traffic
+bus
+subway

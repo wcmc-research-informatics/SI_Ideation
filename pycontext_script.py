@@ -57,7 +57,7 @@ def analyze_sentence(sentence, modifiers, targets, tagExperiencer=False):
       if tagExperiencer:
           e1, e2 = getExperiencerValue(g, te)
           if e1 != 'Other':
-              st.append(tmp1)
+              tst.append(tmp1)
               details.append(tmp2)
               found[tmp2]=Counter(tmp1)
       else:
@@ -149,7 +149,10 @@ majority = int(args.majority)
 df = pd.read_excel(data_p)
 
 #Read in the modifiers and the targets
-modifiers = itemData.get_items('https://raw.githubusercontent.com/wcmc-research-informatics/SI_Ideation/master/pycontext/amia_2017.yml')
+#modifiers = itemData.get_items('https://raw.githubusercontent.com/wcmc-research-informatics/SI_Ideation/master/pycontext/amia_2017.yml')
+
+modifiers = itemData.get_items('https://raw.githubusercontent.com/wcmc-research-informatics/SI_Ideation/master/pycontext/MEDINFO2013_b.yaml')
+
 targets = itemData.get_items('https://raw.githubusercontent.com/wcmc-research-informatics/SI_Ideation/master/pycontext/targets.yml')
 
 

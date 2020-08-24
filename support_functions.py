@@ -91,3 +91,28 @@ def structured_tagger(substring, SI_phrases, irules2):
     else:
         return True
 
+
+def find_all_indexes(input_str, search_str):
+    l1 = []
+    length = len(input_str)
+    index = 0
+    while index < length:
+        i = input_str.find(search_str, index)
+        if i == -1:
+            return l1
+        l1.append(i)
+        index = i + 1
+    return l1
+
+def preprocess_note2(this_text):
+
+    our_punct = '!"#$%&\'()*+,-/;<=>@[\\]^_`{|}~·'
+    translator = str.maketrans(our_punct, ' '*len(our_punct))
+    this_text = this_text.translate(translator)
+
+    this_text = re.sub('[1-3][0-9]{3}', 'xYEARx', this_text)
+
+    this_text = re.sub('((0?[13578]|10|12)(-|\/)(([1-9])|(0[1-9])|([12])([0-9]?)|(3[01]?))(-|\/)((19)([2-9])(\d{1})|(20)([01])(\d{1})|([8901])(\d{1}))|(0?[2469]|11)(-|\/)(([1-9])|(0[1-9])|([12])([0-9]?)|(3[0]?))(-|\/)((19)([2-9])(\d{1})|(20)([01])(\d{1})|([8901])(\d{1})))$', 'xDATEx', this_text)
+    this_text = re.sub('(0?[1-9]|[12][0-9]|3[01])/[12][0-9]|3[01]', 'xDATEx', this_text)
+
+    return this_text

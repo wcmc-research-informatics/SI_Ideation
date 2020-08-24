@@ -1,36 +1,36 @@
 Comments: ''
 Direction: forward
-Lex: no evidence to suggest
+Lex: "no evidence to suggest"
 Regex: ''
 Type: DEFINITE_NEGATED_EXISTENCE
 ---
 Comments: ''
 Direction: forward
-Lex: no interval change
+Lex: "no interval change"
 Regex: ''
 Type: DEFINITE_NEGATED_EXISTENCE
 ---
 Comments: ''
 Direction: forward
-Lex: no mammographic evidence of
+Lex: "no mammographic evidence of"
 Regex: ''
 Type: DEFINITE_NEGATED_EXISTENCE
 ---
 Comments: ''
 Direction: forward
-Lex: no new evidence
+Lex: "no new evidence"
 Regex: ''
 Type: DEFINITE_NEGATED_EXISTENCE
 ---
 Comments: ''
 Direction: forward
-Lex: no other evidence
+Lex: "no other evidence"
 Regex: ''
 Type: DEFINITE_NEGATED_EXISTENCE
 ---
 Comments: ''
 Direction: forward
-Lex: no radiographic evidence of
+Lex: "no radiographic evidence of"
 Regex: ''
 Type: DEFINITE_NEGATED_EXISTENCE
 ---
@@ -216,37 +216,37 @@ Type: DEFINITE_NEGATED_EXISTENCE
 ---
 Comments: ''
 Direction: forward
-Lex: 'no'
+Lex: 'no' 
 Regex: \bno\b
 Type: DEFINITE_NEGATED_EXISTENCE
 ---
 Comments: ''
 Direction: forward
-Lex: no evidence
+Lex: "no evidence"
 Regex: ''
 Type: DEFINITE_NEGATED_EXISTENCE
 ---
 Comments: ''
 Direction: forward
-Lex: no new
+Lex: "no new"
 Regex: ''
 Type: DEFINITE_NEGATED_EXISTENCE
 ---
 Comments: ''
 Direction: forward
-Lex: no other
+Lex: "no other"
 Regex: no[\s]*other
 Type: DEFINITE_NEGATED_EXISTENCE
 ---
 Comments: ''
 Direction: forward
-Lex: no support for
+Lex: "no support for"
 Regex: ''
 Type: DEFINITE_NEGATED_EXISTENCE
 ---
 Comments: ''
 Direction: forward
-Lex: no suspicion of
+Lex: "no suspicion of"
 Regex: ''
 Type: DEFINITE_NEGATED_EXISTENCE
 ---
@@ -438,7 +438,7 @@ Type: DEFINITE_NEGATED_EXISTENCE
 ---
 Comments: ''
 Direction: forward
-Lex: with no
+Lex: "with no"
 Regex: ''
 Type: DEFINITE_NEGATED_EXISTENCE
 ---
@@ -636,37 +636,37 @@ Type: pseudoNegation
 ---
 Comments: ''
 Direction: forward
-Lex: no change
+Lex: "no change"
 Regex: ''
 Type: pseudoNegation
 ---
 Comments: ''
 Direction: forward
-Lex: no definite change
+Lex: "no definite change"
 Regex: ''
 Type: pseudoNegation
 ---
 Comments: ''
 Direction: forward
-Lex: no increase
+Lex: "no increase"
 Regex: ''
 Type: pseudoNegation
 ---
 Comments: ''
 Direction: forward
-Lex: no significant change
+Lex: "no significant change"
 Regex: ''
 Type: pseudoNegation
 ---
 Comments: ''
 Direction: forward
-Lex: no significant interval change
+Lex: "no significant interval change"
 Regex: ''
 Type: pseudoNegation
 ---
 Comments: ''
 Direction: forward
-Lex: no suspicious change
+Lex: "no suspicious change"
 Regex: ''
 Type: pseudoNegation
 ---

@@ -47,6 +47,16 @@ Example Command: ```python pycontext_script.py -d "datapath.xlsx" -nc "note_text
 - This script currently uses the targets from the target.csv file in the lexicons folder of [this github page](https://github.com/KCL-Health-NLP/camhs_pycontext_adaptation)
 - This script currently uses the modifiers from the AMIA2017.csv file in the lexicons folder of [this github page](https://github.com/KCL-Health-NLP/camhs_pycontext_adaptation)
 
+
+**Running the C-SSRS Script:**
+1. Enter the virtual environment with the following command: ```source SI_env/bin/activate```
+2. Run the command: ```python CSSRS_script.py``` with the following arguments:
+- Name of excel file to read in: ```-d "datapath.xlsx" ```
+- Name of note text column: ```-nc "note_text"```
+- Name of excel file to save to: ```-s "savepath.xlsx" ```
+
+  Example Command: ```python CSSRS_script.py -d "datapath.xlsx" -nc "note_text" -s "save_path.xlsx"```
+
 **Citations:**
 
 Negex code was downloaded from the following repository with credit to Peter Kang: https://github.com/mongoose54/negex/tree/master/negex.python. The code was downloaded and altered for the purposes of our classification problem. 
