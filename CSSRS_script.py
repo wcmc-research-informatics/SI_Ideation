@@ -75,10 +75,12 @@ def run_portion(this_text,sentence_breaks, phrase_list, phrase_list2, suicidal_i
         if this_text[next_break] == ':' or this_text[next_break] == '?':
         
             list_of_words = this_text[next_break:].split()
-            space = this_text.find(list_of_words[3], next_break) + len(list_of_words[3])
+            max_length = min(len(list_of_words)-1,3)
         
+            space = this_text.find(list_of_words[max_length], next_break) + len(list_of_words[max_length])
+        
+            
             substr = this_text[sentence_breaks[break_index - 1]: space]
-        
             if suicidal_ideation == True:
 
                 pos,pos_hist, neg,neg_hist, plan, intent = run_taggers(substr, suicidal_ideation, phrase_list, plan_phrases, intent_phrases,irules3 , irules8, irules4)
