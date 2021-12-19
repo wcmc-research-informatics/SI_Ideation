@@ -1,4 +1,0 @@
-without		[PREN]
-no		[PREN]
-denies		[PREN]
-not		[PREN]
