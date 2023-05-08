@@ -196,10 +196,10 @@ def run_algorithm(dataframe,note_c, breaks, SI_phrases, SI_phrases2, SB_phrases,
         if len(pos_histSImention[i]) > 0:
             predhistSI[i] = 1
         
-        if len(pos_SBmention[i]) > 0 or len(pos_SAmention[i]) > 0:
+        if len(pos_SBmention[i]) > 0: #or len(pos_SAmention[i]) > 0:
             predSB[i] = 1
     
-        if len(pos_histSBmention[i]) > 0 or len(pos_SAmention[i]) > 0:
+        if len(pos_histSBmention[i]) > 0: #or len(pos_SAmention[i]) > 0:
             predhistSB[i] = 1
             
         if len(pos_SAmention[i]) > 0:
