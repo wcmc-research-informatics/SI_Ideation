@@ -239,14 +239,14 @@ def run_algorithm(dataframe,note_c, breaks, SI_phrases, SI_phrases2, SB_phrases,
     dataframe['pos_SB_hist_men'] = pd.Series(pos_histSBmention, index = dataframe.index)
     dataframe['neg_SB_hist_men']= pd.Series(neg_histSBmention, index = dataframe.index)
     
-    dataframe['pos_SA_hist_men'] = pd.Series(pos_histSBmention, index = dataframe.index)
-    dataframe['neg_SA_hist_men']= pd.Series(neg_histSBmention, index = dataframe.index)
+    dataframe['pos_SA_hist_men'] = pd.Series(pos_histSAmention, index = dataframe.index)
+    dataframe['neg_SA_hist_men']= pd.Series(neg_histSAmention, index = dataframe.index)
 
     dataframe['predSB'] = pd.Series(predSB, index = dataframe.index)
     dataframe['predhistSB'] = pd.Series(predhistSB, index = dataframe.index)
     
-    dataframe['predSA'] = pd.Series(predSB, index = dataframe.index)
-    dataframe['predhistSA'] = pd.Series(predhistSB, index = dataframe.index)
+    dataframe['predSA'] = pd.Series(predSA, index = dataframe.index)
+    dataframe['predhistSA'] = pd.Series(predhistSA, index = dataframe.index)
 
     dataframe['not_relevant'] = pd.Series(not_relevant, index = dataframe.index)
 
